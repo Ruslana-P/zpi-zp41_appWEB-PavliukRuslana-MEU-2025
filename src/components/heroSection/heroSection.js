@@ -7,6 +7,7 @@ import {
   ImageContainer,
   PlantImage,
 } from "./styled";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -21,9 +22,9 @@ const HeroSection = () => {
           plants. Use our plants to create a unique Urban Jungle. Order your
           favorite plants!
         </Description>
-        <a href="/shop">
+        <Link to="/shop">
           <button>SHOP NOW</button>
-        </a>
+        </Link>
       </Content>
       <ImageContainer>
         <PlantImage src={mainPlant} alt="Main Plant" />

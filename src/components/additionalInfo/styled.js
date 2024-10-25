@@ -46,4 +46,9 @@ export const SectionWrapper = styled.section`
       font-size: 20px;
     }
   }
+
+  a {
+    color: green;
+    font-weight: bold;
+  }
 `;

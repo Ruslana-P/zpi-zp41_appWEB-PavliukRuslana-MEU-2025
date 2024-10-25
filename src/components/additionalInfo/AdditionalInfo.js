@@ -28,11 +28,9 @@ const AdditionalInfo = () => {
             <img src={location} alt="location icon" />
             Peremohy Avenue, 45, Kharkiv, 03056
           </li>
-          <li>
-            <img src={location} alt="location icon" />
-            Hlybochytska Street, 44, Kharkiv, 04050
-          </li>
         </ul>
+        Check how to get to us on the{" "}
+        <a href="https://www.google.com/maps">map</a>
       </div>
       <div className="right-block">
         <h5>5 Reasons Why Having a Houseplant is AWESOME</h5>

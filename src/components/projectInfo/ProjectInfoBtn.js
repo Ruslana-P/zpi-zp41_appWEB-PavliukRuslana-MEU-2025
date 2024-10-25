@@ -1,12 +1,13 @@
 import InfoIcon from "../../images/info.png";
 import { Container } from "./styled";
+import { Link } from "react-router-dom";
 
 const ProjectInfoBtn = () => {
   return (
     <Container>
-      <a href="./project-info">
+      <Link to="/project-info">
         <img src={InfoIcon} alt="project info icon" />
-      </a>
+      </Link>
     </Container>
   );
 };
