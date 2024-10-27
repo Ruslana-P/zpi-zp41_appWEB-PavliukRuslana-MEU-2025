@@ -32,8 +32,9 @@ const ContactForm = () => {
       </h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label> Name</label>
+          <label htmlFor="name">Name</label>
           <input
+            id="name"
             type="text"
             name="name"
             value={formData.name}
@@ -42,8 +43,9 @@ const ContactForm = () => {
             required
           />
 
-          <label>Phone number</label>
+          <label htmlFor="phone">Phone number</label>
           <input
+            id="phone"
             type="tel"
             name="phone"
             value={formData.phone}
@@ -52,8 +54,9 @@ const ContactForm = () => {
             required
           />
 
-          <label>Mail</label>
+          <label htmlFor="email">Mail</label>
           <input
+            id="email"
             type="email"
             name="email"
             value={formData.email}
@@ -64,8 +67,9 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label>Please enter your question here</label>
+          <label htmlFor="question">Please enter your question here</label>
           <textarea
+            id="question"
             name="question"
             value={formData.question}
             onChange={handleChange}
