@@ -1,9 +1,9 @@
 import React from "react";
 import { Nav, NavList, NavItem, StyledNavLink } from "./styled";
 
-const Navigation = () => {
+const Navigation = ({ isVisible = true }) => {
   return (
-    <Nav>
+    <Nav isVisible={isVisible}>
       <NavList>
         <NavItem>
           <StyledNavLink exact to="/">

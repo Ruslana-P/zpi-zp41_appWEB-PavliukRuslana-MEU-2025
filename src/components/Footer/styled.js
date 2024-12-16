@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const SectionWrapper = styled.section`
+export const Cnt = styled.footer`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+`;
+
+export const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,15 +14,21 @@ export const SectionWrapper = styled.section`
   background-color: #eef7e9;
   border-radius: 8px;
   gap: 50px;
-  margin-bottom: 100px;
+  margin-bottom: ${(props) => (props.isMainPage ? "100px" : "50px")};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   div {
-    flex-basis: 30%;
+    flex-basis: ${(props) => (props.isMainPage ? "30%" : "50%")};
   }
 
   ul {
     list-style-type: none;
     padding: 0;
+    display: ${(props) => (props.isMainPage ? "block" : "flex")};
+    flex-wrap: wrap;
   }
 
   ol {
@@ -25,6 +37,7 @@ export const SectionWrapper = styled.section`
 
   li {
     padding: 10px 0;
+    flex-basis: 50%;
   }
 
   li img {
@@ -51,4 +64,12 @@ export const SectionWrapper = styled.section`
     color: green;
     font-weight: bold;
   }
+
+  @media (max-width: 768px) {
+    .flex-left {
+      order: 2;
+    }
+  }
 `;
+
+export const StyledList = styled.ul``;

@@ -8,18 +8,22 @@ export const HeroSectionWrapper = styled.section`
   background-color: #f9f9f9;
   margin-bottom: 50px;
 
-  h2 {
+  #sub-title {
     font-size: 16px;
     font-weight: 600;
     color: #4caf50;
     margin-bottom: 10px;
   }
 
-  h1 {
+   #main-title  {
     font-size: 48px;
     font-weight: 700;
     margin: 10px 0;
     line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   h1 span {

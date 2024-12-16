@@ -4,7 +4,7 @@ import ShoppingCard from "../../images/ShoppingCard";
 
 const ShoppingCart = () => {
   return (
-    <Bucket>
+    <Bucket data-testid="jfdhkfhdsk">
       <ShoppingCard />
       <Badge>6</Badge>
       {/* // later add here logic for counting added products  */}

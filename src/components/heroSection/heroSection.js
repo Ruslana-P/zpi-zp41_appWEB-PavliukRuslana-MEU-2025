@@ -13,8 +13,8 @@ const HeroSection = () => {
   return (
     <HeroSectionWrapper>
       <Content>
-        <h2>WELCOME TO GREENSHOP</h2>
-        <h1>
+        <h2 id="sub-title">WELCOME TO GREENSHOP</h2>
+        <h1 id="main-title">
           LET'S MAKE A <br /> BETTER <span>PLANET</span>
         </h1>
         <Description>

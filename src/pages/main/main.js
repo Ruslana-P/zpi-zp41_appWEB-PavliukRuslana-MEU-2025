@@ -1,22 +1,25 @@
 import React from "react";
-import Header from "../../components/header/header";
 import HeroSection from "../../components/heroSection/heroSection";
 import PlantTable from "../../components/plantTable/plantTable";
 import ContactForm from "../../components/contactForm/ContactForm";
-import AdditionalInfo from "../../components/additionalInfo/AdditionalInfo";
+import Footer from "../../components/Footer/Footer";
 import ProjectInfoBtn from "../../components/projectInfo/ProjectInfoBtn";
 import { PageCnt } from "./styled";
+import Header from "../../components/header/header";
 
 const MainPage = () => {
   return (
-    <PageCnt>
+    <>
       <Header />
-      <HeroSection />
-      <PlantTable />
-      <ContactForm />
-      <AdditionalInfo />
-      <ProjectInfoBtn />
-    </PageCnt>
+      <PageCnt>
+        <HeroSection />
+        <PlantTable />
+        <ContactForm />
+
+        <ProjectInfoBtn />
+      </PageCnt>
+      <Footer />
+    </>
   );
 };
 

@@ -13,17 +13,30 @@ export const SectionWrapper = styled.section`
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
   }
 
   h2 span {
     color: #4caf50;
     margin: 0 30px;
+    text-shadow: 1px 1px 1px gray;
   }
 
   form {
     display: flex;
     justify-content: space-between;
     gap: 100px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   form div {
@@ -31,7 +44,7 @@ export const SectionWrapper = styled.section`
     margin-right: 20px;
   }
 
-   form div:last-child {
+  form div:last-child {
     flex: 2;
     margin-right: 20px;
   }
@@ -69,5 +82,9 @@ export const SectionWrapper = styled.section`
     cursor: pointer;
     font-weight: bold;
     width: 40%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   },
 `;

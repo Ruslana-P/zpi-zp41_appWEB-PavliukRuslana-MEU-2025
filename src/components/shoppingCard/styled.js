@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Bucket = styled.div`
   position: relative;
   margin-right: 20px;
+  width: 40px;
+  height: 40px;
 `;
 
 export const Badge = styled.span`
